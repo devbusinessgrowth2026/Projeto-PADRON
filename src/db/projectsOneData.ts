@@ -38,7 +38,7 @@ export const projectsOneData: ProjectDataType[] = [
     },
     {
         id: 5,
-        image: "/img/project/02.jpg",
+        image: "/img/project/05.jpg",
         category: "Solar energy",
         title: "Greener Planet",
         link: "/project-details"

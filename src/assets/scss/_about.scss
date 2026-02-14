@@ -412,18 +412,28 @@
             .icon-items {
                 @include flex;
                 gap: 16px;
-                background-color: $white;
+                background-color: $surface-color;
                 box-shadow: $shadow;
                 padding: 28px 25px;
                 border-left: 3px solid $theme-color;
+                border-radius: 8px;
+
+                .icon {
+                    color: $theme-color;
+
+                    svg {
+                        fill: currentColor;
+                    }
+                }
 
                 .content {
                     h2 {
                         font-size: 28px;
                         margin-bottom: 5px;
+                        color: $header-color;
                     }
                     span {
-                        color: $header-color;
+                        color: $text-color;
                     }
                 }
             }

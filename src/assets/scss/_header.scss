@@ -63,14 +63,14 @@
 
 		li {
 			font-size: 15px;
-			color: $text-color-2;
+			color: $black;
 
-			a {
-				color: $text-color-2;
+			a, .link {
+				color: $black;
 			}
 
 			i {
-				color: $white;
+				color: $black;
 				margin-right: 10px;
 			}
 		}
@@ -213,15 +213,13 @@
 					top: 100%;
 					inset-inline-start: 0;
 					min-width: 240px;
-					background: $white;
+					background: $surface-color;
 					z-index: 99999;
 					visibility: hidden;
 					opacity: 0;
 					transform-origin: top center;
 					color: $header-color;
-					box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-					-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-					-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+					box-shadow: $shadow;
 					transform: translateY(10px);
 					@include transition;
 
@@ -241,7 +239,7 @@
 							padding-bottom: 11px;
 							padding-top: 11px;
 							width: 100%;
-							border-bottom: 1px solid #eeeeee;
+							border-bottom: 1px solid $border-color;
 						}
 
 						&:last-child {
@@ -348,8 +346,7 @@
 								}
 
 								&::before {
-				background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 215, 0, 0)), to(#FFD700));
-				background: linear-gradient(to bottom, rgba(255, 215, 0, 0) 0%, #FFD700 100%);
+				background: linear-gradient(to bottom, rgba(230, 194, 0, 0) 0%, $theme-color 100%);
 									background-repeat: no-repeat;
 									background-size: cover;
 									background-position: center;
@@ -429,7 +426,7 @@
 
 .header-1 {
 	position: relative;
-	background-color: $white;
+	background-color: $bg-color;
 	box-shadow: $shadow;
 	z-index: 999;
 
@@ -804,7 +801,7 @@
 //>>>>> Mobile Menu <<<<</
 .mobile-menu {
 	.menu-item {
-		border-bottom: 1px solid #ddd;
+		border-bottom: 1px solid $border-color;
 		position: relative;
 		a {
 			padding: 7px 0;
@@ -830,7 +827,7 @@
 
 	.has-submenu {
 		div {
-			border-bottom: 1px solid #ddd;
+			border-bottom: 1px solid $border-color;
 			a {
 				margin-left: 30px;
 			}
@@ -842,7 +839,7 @@
 		}
 
 		div:first-child {
-			border-top: 1px solid #ddd;
+			border-top: 1px solid $border-color;
 			// padding-top: 7px;
 		}
 
@@ -852,7 +849,7 @@
 	}
 
 	.mega-menu{
-		border-top: 1px solid #ddd;
+		border-top: 1px solid $border-color;
 		padding-top: 10px;
 	}
 	.homemenu {
@@ -899,8 +896,7 @@
 			}
 
 			&::before {
-				background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 215, 0, 0)), to(#FFD700));
-				background: linear-gradient(to bottom, rgba(255, 215, 0, 0) 0%, #FFD700 100%);
+				background: linear-gradient(to bottom, rgba(230, 194, 0, 0) 0%, $theme-color 100%);
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
@@ -959,7 +955,7 @@
 	width: 100%;
 	z-index: 100;
 	transition: all 0.9s;
-	background-color: $white;
+	background-color: $bg-color;
 	box-shadow: $shadow;
 	-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -1110,6 +1106,18 @@
 	}
 }
 
+// Logo PADRON - mesmo tamanho do logo anterior (170x43)
+.site-logo {
+	height: 43px;
+	width: auto;
+	display: block;
+	object-fit: contain;
+
+	&.site-logo-footer {
+		height: 50px;
+	}
+}
+
 .offcanvas__wrapper {
 	position: relative;
 	height: 100%;
@@ -1209,7 +1217,7 @@
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	background: #151515;
+	background: $bg-color;
 	z-index: 900;
 	top: 0;
 	opacity: 0;
@@ -1242,7 +1250,7 @@
 
 	&::before {
 		@include before;
-		background-image: linear-gradient(270.07deg, #FFD700 0.07%, #000000 99.95%);
+		background-image: linear-gradient(270.07deg, $theme-color 0.07%, $black 99.95%);
 		opacity: 0.9;
 	}
 

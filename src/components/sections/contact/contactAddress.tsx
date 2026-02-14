@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import ContactVideoPopup from "./contactVideoPopup"
 
 const ContactAddress = () => {
     return (
@@ -15,7 +14,7 @@ const ContactAddress = () => {
                     <div className="content">
                         <p>WhatsApp (orçamento s/ compromisso)</p>
                         <h3>
-                            <Link to="tel:+5500000000000">+55 (00) 00000-0000</Link>
+                            <a href="https://api.whatsapp.com/send?phone=5521964937618&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Padron%20el%C3%A9trica" target="_blank" rel="noopener noreferrer">+55 21 96493-7618</a>
                         </h3>
                     </div>
                 </div>
@@ -42,14 +41,13 @@ const ContactAddress = () => {
                         </svg>
                     </div>
                     <div className="content">
-                        <p>Instagram - avalie aqui</p>
+                        <p>Instagram</p>
                         <h3>
-                            @seuinstagram
+                            <a href="https://www.instagram.com/eletrica_padron/" target="_blank" rel="noopener noreferrer">@eletrica_padron</a>
                         </h3>
                     </div>
                 </div>
             </div>
-            <ContactVideoPopup/>
         </div>
     )
 }

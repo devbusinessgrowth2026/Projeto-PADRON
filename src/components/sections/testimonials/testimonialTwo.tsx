@@ -7,7 +7,7 @@ import SectionTitle from "@/components/ui/sectionTitle";
 
 const TestimonialTwo = () => {
     return (
-        <section className="tesimonial-section-2 pb-0 section-padding bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/bg.jpg")' }}>
+        <section className="tesimonial-section-2 pb-0 section-padding bg-cover" style={{ backgroundImage: 'url("/img/testimonial/bg.jpg")' }}>
             <div className="container">
                 <div className="section-title-area">
                     <SectionTitle>

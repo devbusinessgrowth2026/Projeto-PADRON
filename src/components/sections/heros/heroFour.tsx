@@ -8,21 +8,21 @@ import { motion } from "motion/react"
 
 const heroSlides = [
     {
-        image: '/img/hero/hero-7.jpg',
-        title: 'We Provide our clients Best Solar Services',
-        description: 'Transmds is the world’s driving worldwide coordinations supplier we uphold industry and exchange the worldwide trade of merchandi',
+        image: '/img/hero/hero-8.jpg',
+        title: 'Padron - Elétrica, Automação e CFTV',
+        description: 'Soluções em elétrica, CFTV, padrão LIGHT e alarmes para residências, comércios e condomínios’s.',
         link: '/',
     },
     {
         image: '/img/hero/hero-5.jpg',
-        title: 'We Provide our clients Best Solar Services',
-        description: 'Transmds is the world’s driving worldwide coordinations supplier we uphold industry and exchange the worldwide trade of merchandi',
+        title: 'Padron - Elétrica, Automação e CFTV',
+        description: 'Soluções em elétrica, CFTV, padrão LIGHT e alarmes para residências, comércios e condomínios’s.',
         link: '/',
     },
     {
         image: '/img/hero/hero-9.jpg',
-        title: 'We Provide our clients Best Solar Services',
-        description: 'Transmds is the world’s driving worldwide coordinations supplier we uphold industry and exchange the worldwide trade of merchandi',
+        title: 'Padron - Elétrica, Automação e CFTV',
+        description: 'Soluções em elétrica, CFTV, padrão LIGHT e alarmes para residências, comércios e condomínios’s.',
         link: '/',
     },
 ]
@@ -99,7 +99,7 @@ const HeroFour = () => {
                                                     className="hero-button"
                                                 >
                                                     <Link to={slide.link} className="theme-btn theme-color-2" data-animation="slideUp" data-delay="1.7">
-                                                        <span>Learn More <i className="fas fa-chevron-right" /></span>
+                                                        <span>Saiba mais <i className="fas fa-chevron-right" /></span>
                                                     </Link>
                                                 </motion.div>
                                             </motion.div>

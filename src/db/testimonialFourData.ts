@@ -26,7 +26,7 @@ export const testimonialFourData = [
     {
         id: 4,
         quote: 'when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many but also the leap into',
-        image: '/img/testimonial/06.jpg',
+        image: '/img/testimonial/04.png',
         name: 'Esther Howard',
         role: 'President of Sales',
         stars: 5

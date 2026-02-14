@@ -16,7 +16,7 @@ const slidesData: SlideType[] = [
   {
     id: 1,
     image: '/img/hero/hero-12.jpg',
-    title: 'DRONELÉTRICA',
+    title: 'Padron',
     heading: 'Elétrica, Automação, CFTV<br />e Centrais de Alarme',
     description: 'Soluções completas em elétrica, automação, CFTV, padrão LIGHT e aumento de carga para residências, comércios, prédios e shoppings.',
     link: '/service',

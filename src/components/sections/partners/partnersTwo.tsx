@@ -7,9 +7,9 @@ const brandImages = [
     "/img/brand/02.png",
     "/img/brand/03.png",
     "/img/brand/04.png",
-    "/img/brand/01.png",
     "/img/brand/02.png",
     "/img/brand/03.png",
+    "/img/brand/04.png",
 ];
 const PartnersTwo = () => {
     return (

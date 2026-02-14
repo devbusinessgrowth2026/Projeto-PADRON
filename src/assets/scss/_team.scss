@@ -105,7 +105,7 @@
                         border-radius: 50%;
                         text-align: center;
                         display: block;
-                        background: rgba(56, 75, 255, .2);
+                        background: var(--theme-muted);
                         color: $white;
                         -webkit-transition: all .4s ease-in-out;
                         transition: all .4s ease-in-out;
@@ -267,18 +267,24 @@
         position: relative;
         z-index: 9;
         padding: 30px;
-        background-color: $white;
+        background-color: $surface-color;
         box-shadow: $shadow;
         margin-right: 30px;
 
         h3 {
             margin-bottom: 5px;
+            color: $header-color;
 
             a {
+                color: $header-color;
                 &:hover {
                     color: $theme-color;
                 }
             }
+        }
+
+        p {
+            color: $text-color;
         }
     }
 }

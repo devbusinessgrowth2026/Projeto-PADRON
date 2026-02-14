@@ -231,7 +231,7 @@
 
     &::before {
         @include before;
-        background: #FFD700;
+        background: $theme-color;
         opacity: .9;
     }
 

@@ -17,7 +17,7 @@ const HeaderOne = () => {
                             <div className="header-left">
                                 <div className="logo">
                                     <Link to="/" className="header-logo">
-                                        <img src="/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="https://ydjnshjgpsyzvaxwgoca.supabase.co/storage/v1/object/sign/Padron%20Prejeto/Capa_Orcamento_1_paint.jpg-removebg-preview.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hM2Y5YzQ2Yy04NDY3LTQxMTgtOGZhNC1kYWE0ODU1NmEwY2QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQYWRyb24gUHJlamV0by9DYXBhX09yY2FtZW50b18xX3BhaW50LmpwZy1yZW1vdmViZy1wcmV2aWV3LnBuZyIsImlhdCI6MTc3MTA3NTA4MywiZXhwIjoxODM0MTQ3MDgzfQ.tfjHqj1vBiDBmj-c7zGMHMiRb_HgD7Hzuka14wThbXM" alt="Padron" className="site-logo" />
                                     </Link>
                                 </div>
                             </div>

@@ -7,22 +7,18 @@ export const menuDataSingleHomePage: MenuItemDataType[] = [
     },
     {
         title: 'Sobre',
-        link: '#about',
+        link: '/#about',
     },
     {
         title: 'Serviços',
-        link: '#services',
-    },
-    {
-        title: 'Projetos',
-        link: '#projects',
+        link: '/#services',
     },
     {
         title: 'Equipe',
-        link: '#team',
+        link: '/#team',
     },
     {
-        title: 'Blog',
-        link: '#blog',
+        title: 'Contato',
+        link: '/#contact',
     },
 ];

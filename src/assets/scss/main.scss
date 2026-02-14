@@ -21,7 +21,11 @@ Version: 1.0.0
 @import "_buttons";
 //>> Typography <<//
 @import "_typography";
-//>> Basic End <<//	
+//>> Basic End <<//
+
+html {
+    scroll-behavior: smooth;
+}
 
 @import "_customDropdown";
 

@@ -6,7 +6,7 @@
     font-size: 16px;
     font-weight: 600;
     padding: 24px 40px;
-    border-radius: 0;
+    border-radius: 6px;
     text-transform: capitalize;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -64,7 +64,7 @@
 
     &.bg-white {
         background-color: $white;
-        color: $header-color;
+        color: $black;
 
         &:hover {
             color: $white;

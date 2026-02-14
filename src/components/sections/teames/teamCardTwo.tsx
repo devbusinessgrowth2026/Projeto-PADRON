@@ -5,7 +5,15 @@ const TeamCardTwo = ({ member }: { member: TeamMemberDataType }) => {
     return (
         <div className="single-team-items">
             <div className="team-image">
-                <img src={member.image} alt="team-img" />
+                <img
+                    src={member.image}
+                    alt={member.name}
+                    onError={(e) => {
+                        const t = e.currentTarget;
+                        t.onerror = null;
+                        t.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&size=400&background=1a1a1a&color=FFD700`;
+                    }}
+                />
                 <div className="social-profile">
                     <ul>
                         {

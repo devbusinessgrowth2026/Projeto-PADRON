@@ -25,11 +25,11 @@
         position: absolute;
         width: 100%;
         min-width: 160px;
-        background: #fff;
-        border: 1px solid #ccc;
+        background: $surface-color;
+        border: 1px solid $border-color;
         margin-top: 5px;
         border-radius: 5px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: $shadow;
         list-style: none;
         padding: 0;
 
@@ -37,13 +37,15 @@
             padding: 10px;
             cursor: pointer;
             transition: background 0.2s;
+            color: $text-color;
 
             &:hover {
-                background: #f0f0f0;
+                background: var(--theme-muted);
             }
 
             &.selected {
-                background: #e0e0e0;
+                background: var(--theme-muted);
+                color: $theme-color;
             }
         }
     }

@@ -18,7 +18,7 @@ const TeamesThree = () => {
                         <SectionTitle.SubTitle>Nossa equipe</SectionTitle.SubTitle>
                         <SectionTitle.Title>Profissionais Especializados <br /> e Qualificados</SectionTitle.Title>
                     </SectionTitle>
-                    <Link to="/team" className="theme-btn wow slideUp" data-delay=".5">
+                    <Link to="/#team" className="theme-btn wow slideUp" data-delay=".5">
                         Ver toda equipe
                         <i className="fa-solid fa-arrow-right-long" />
                     </Link>

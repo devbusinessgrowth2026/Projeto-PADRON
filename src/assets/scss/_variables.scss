@@ -1,21 +1,26 @@
 :root {
-
-    --body: #fff;
+    /* Tema preto + dourado – paleta harmoniosa */
+    --body: #0a0a0a;
     --black: #000;
     --white: #fff;
-    --theme: #FFD700;
+    --theme: #e6c200;
     --theme2: #FFD700;
-    --header: #000000;
-    --text: #585858;
+    --theme-muted: rgba(230, 194, 0, 0.15);
+    --header: #ffffff;
+    --text: #c2c2c2;
+    --text-muted: #8e8e8e;
     --text-2: #ffffffcc;
-    --border: #E3E3E3;
-    --border2: #242449;
-    --border3: #FFD700;
-    --bg: #000000;
-    --bg2: #1a1a1a;
-    --bg3: #ffffff33;
-    --box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
-    --box-shadow-2: 0px 4px 25px rgba(255, 215, 0, 0.3);
+    --border: #2a2a2a;
+    --border2: #3a3a3a;
+    --border3: #e6c200;
+    --bg: #0a0a0a;
+    --bg2: #111111;
+    --bg3: #ffffff12;
+    --bg-light: #141414;
+    --surface: #161616;
+    --overlay: rgba(10, 10, 10, 0.75);
+    --box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    --box-shadow-2: 0 4px 24px rgba(230, 194, 0, 0.2);
 }
 
 // Theme Color - Defualt Colors
@@ -33,5 +38,6 @@ $border-color-3: var(--border3);
 $bg-color: var(--bg);
 $bg-color-2: var(--bg2);
 $bg-color-3: var(--bg3);
+$surface-color: var(--surface);
 $shadow: var(--box-shadow);
 $shadow-2: var(--box-shadow-2);

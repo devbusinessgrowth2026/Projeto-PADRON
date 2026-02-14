@@ -24,7 +24,7 @@ export const projectsTwoData:ProjectDataType[] = [
     },
     {
         id: 4,
-        image: '/img/project/06.jpg',
+        image: '/img/project/08.jpg',
         category: 'solar energy',
         title: 'Solar Energy system',
         link: '/project-details',

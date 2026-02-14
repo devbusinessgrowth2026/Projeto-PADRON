@@ -1,22 +1,7 @@
+import RedirectToSection from "@/components/RedirectToSection";
 import RootLayout from "@/layout/root";
 import Error from "@/pages/404";
-import About from "@/pages/about";
-import Blog from "@/pages/blog";
-import BlogDetails from "@/pages/blog-details";
-import BlogStandard from "@/pages/blog-standard";
-import Contact from "@/pages/contact";
-import Faq from "@/pages/faq";
 import HomeThreeSingle from "@/pages/home-three-single";
-import Pricing from "@/pages/pricing";
-import Project from "@/pages/project";
-import ProjectCarousel from "@/pages/project-carousel";
-import ProjectDetails from "@/pages/project-details";
-import Service from "@/pages/service";
-import ServiceCarousel from "@/pages/service-carousel";
-import ServiceDetails from "@/pages/service-details";
-import Team from "@/pages/team";
-import TeamCarousel from "@/pages/team-carousel";
-import TeamDetails from "@/pages/team-details";
 import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
@@ -25,81 +10,81 @@ export const router = createBrowserRouter([
         element: <RootLayout />,
         children: [
             {
-                path: "/",
-                element: <HomeThreeSingle />
+                index: true,
+                element: <HomeThreeSingle />,
             },
             {
-                path:'/about',
-                element:<About/>
+                path: "about",
+                element: <RedirectToSection />,
             },
             {
-                path:'/service',
-                element:<Service/>
+                path: "service",
+                element: <RedirectToSection />,
             },
             {
-                path:'/service-carousel',
-                element:<ServiceCarousel/>
+                path: "service-carousel",
+                element: <RedirectToSection />,
             },
             {
-                path:'/service-details',
-                element:<ServiceDetails/>
+                path: "service-details",
+                element: <RedirectToSection />,
             },
             {
-                path:'/project',
-                element:<Project/>
+                path: "project",
+                element: <RedirectToSection />,
             },
             {
-                path:'/project-carousel',
-                element:<ProjectCarousel/>
+                path: "project-carousel",
+                element: <RedirectToSection />,
             },
             {
-                path:'/project-details',
-                element:<ProjectDetails/>
+                path: "project-details",
+                element: <RedirectToSection />,
             },
             {
-                path:'/team',
-                element:<Team/>
+                path: "team",
+                element: <RedirectToSection />,
             },
             {
-                path:'/team-carousel',
-                element:<TeamCarousel/>
+                path: "team-carousel",
+                element: <RedirectToSection />,
             },
             {
-                path:'/team-details',
-                element:<TeamDetails/>
+                path: "team-details",
+                element: <RedirectToSection />,
             },
             {
-                path:'/pricing',
-                element:<Pricing/>
+                path: "pricing",
+                element: <RedirectToSection />,
             },
             {
-                path:'/faq',
-                element:<Faq/>
+                path: "faq",
+                element: <RedirectToSection />,
             },
             {
-                path:'/404',
-                element:<Error/>
+                path: "404",
+                element: <Error />,
             },
             {
-                path:'/news',
-                element:<Blog/>
+                path: "news",
+                element: <RedirectToSection />,
             },
             {
-                path:'/news-standard',
-                element:<BlogStandard/>
+                path: "news-standard",
+                element: <RedirectToSection />,
             },
             {
-                path:'/news-details',
-                element:<BlogDetails/>
+                path: "news-details",
+                element: <RedirectToSection />,
             },
             {
-                path:'/contact',
-                element:<Contact/>
+                path: "contact",
+                element: <RedirectToSection />,
             },
-        ]
+        ],
     },
     {
-        path:'*',
-        element:<Error/>
+        path: "*",
+        element: <Error />,
     },
 ])

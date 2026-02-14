@@ -3,13 +3,13 @@ import PriceCard from "./priceCard"
 
 const PriceGridTwo = () => {
     return (
-        <section className="pricing-section fix section-padding">
+        <section id="pricing" className="pricing-section fix section-padding">
             <div className="container">
                 <div className="pricing-wrapper">
                     <div className="section-title text-center">
-                        <span className="wow slideUp">Our Pricing</span>
+                        <span className="wow slideUp">Nossos planos</span>
                         <h2 className="wow slideUp" data-delay=".3">
-                            Choose Your Best Offer
+                            Escolha a melhor oferta
                         </h2>
                     </div>
                     <div className="tab-content">

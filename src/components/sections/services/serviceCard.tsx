@@ -11,13 +11,19 @@ const ServiceCard = ({ service, className }: { service: ServiceDataType; classNa
                 <h4>
                     <Link to={service.link}>
                         {service.title}
+                        {service.subtitle && (
+                            <>
+                                <br />
+                                <span className="service-card-subtitle">{service.subtitle}</span>
+                            </>
+                        )}
                     </Link>
                 </h4>
                 <p>
                     {service.description}
                 </p>
                 <Link to={service.link} className="theme-btn-2 mt-3">
-                    read More
+                    Saiba mais
                     <i className="fa-solid fa-arrow-right-long" />
                 </Link>
             </div>

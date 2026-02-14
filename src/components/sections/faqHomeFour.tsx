@@ -3,7 +3,7 @@ import SectionTitle from "../ui/sectionTitle"
 
 const FaqHomeFour = ({ className }: { className?: string }) => {
     return (
-        <section className={`faq-section-2 fix section-padding ${className}`}>
+        <section id="faq" className={`faq-section-2 fix section-padding ${className}`}>
             <div className="container">
                 <div className="faq-wrapper">
                     <div className="row g-4">
@@ -15,8 +15,8 @@ const FaqHomeFour = ({ className }: { className?: string }) => {
                         <div className="col-lg-6">
                             <div className="faq-content style-2">
                                 <SectionTitle>
-                                    <SectionTitle.SubTitle>Request A Quote</SectionTitle.SubTitle>
-                                    <SectionTitle.Title>Request A Quote talk about how we can help you reduce your energy</SectionTitle.Title>
+                                    <SectionTitle.SubTitle>Perguntas frequentes</SectionTitle.SubTitle>
+                                    <SectionTitle.Title>Solicite um orçamento ou tire suas dúvidas sobre nossos serviços</SectionTitle.Title>
                                 </SectionTitle>
                                 <div className="faq-accordion mt-4 mt-md-0">
                                     <div className="accordion" id="accordion">

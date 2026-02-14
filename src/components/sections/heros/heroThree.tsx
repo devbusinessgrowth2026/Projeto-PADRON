@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 const heroSlides = [
     {
         id: 1,
-        image: '/img/hero/padron-hero.jpg',
-        title: 'PADRON - Elétrica, Automação e CFTV',
+        image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1920&q=80',
+        title: 'Padron - Elétrica, Automação e CFTV',
         link: '#services',
     },
     {
@@ -21,7 +21,7 @@ const heroSlides = [
     },
     {
         id: 3,
-        image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1920&q=80',
+        image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&q=80',
         title: 'Soluções Completas em Elétrica e Automação',
         link: '#contact',
     },

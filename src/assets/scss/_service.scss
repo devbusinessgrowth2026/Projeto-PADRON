@@ -87,6 +87,12 @@
                     color: $theme-color;
                 }
             }
+
+            .service-card-subtitle {
+                font-weight: 600;
+                font-size: 0.95em;
+                opacity: 0.9;
+            }
         }
     }
 
@@ -168,7 +174,7 @@
             @include before;
             background-repeat: no-repeat;
             background-size: cover;
-            background: #FFD700;
+            background: $theme-color;
         }
 
         &.active {
@@ -301,7 +307,7 @@
 
 .service-card-items {
     margin-top: 30px;
-    background-color: $white;
+    background-color: $surface-color;
     border-radius: 0 0 10px 10px;
     box-shadow: $shadow;
     position: relative;
@@ -348,12 +354,24 @@
         h4 {
             font-weight: 700;
             margin-bottom: 10px;
+            color: $header-color;
 
             a {
+                color: $header-color;
                 &:hover {
                     color: $theme-color;
                 }
             }
+
+            .service-card-subtitle {
+                font-weight: 600;
+                font-size: 0.95em;
+                opacity: 0.9;
+            }
+        }
+
+        p {
+            color: $text-color;
         }
     }
 
@@ -584,7 +602,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(180deg, #FFD700 0%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(180deg, $theme-color 0%, rgba(0, 0, 0, 0) 100%);
             opacity: .9;
         }
 

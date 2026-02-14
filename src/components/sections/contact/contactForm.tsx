@@ -1,7 +1,7 @@
 const ContactForm = () => {
     return (
         <div className="contact-content">
-            <h2>Fale com a DRONELÉTRICA</h2>
+            <h2>Fale com a Padron</h2>
             <p>
                 Envie sua dúvida ou solicite um orçamento sem compromisso. Responderemos o mais rápido possível.
             </p>

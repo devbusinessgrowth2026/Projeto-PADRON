@@ -13,8 +13,9 @@ const ServicesOne = () => {
           <SectionTitle>
             <SectionTitle.SubTitle>Menu de serviços</SectionTitle.SubTitle>
             <SectionTitle.Title>
-              Soluções em elétrica, automação,<br /> CFTV e alarmes
+              MENU DE SERVIÇOS
             </SectionTitle.Title>
+            <p className="mt-3 mb-0" style={{ opacity: 0.9 }}>Elétrica predial, comercial, automação, CFTV, porteiro eletrônico, aumento de carga, padrão light</p>
           </SectionTitle>
           <div className="array-button">
             <button className="array-prev"><i className="fa fa-arrow-right" /></button>

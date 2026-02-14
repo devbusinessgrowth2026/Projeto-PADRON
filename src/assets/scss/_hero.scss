@@ -105,7 +105,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(90deg, #16171A 0.06%, rgba(22, 23, 26, 0) 99.93%);
+            background: linear-gradient(90deg, var(--bg) 0%, rgba(10, 10, 10, 0) 99.93%);
             z-index: -1;
         }
     }
@@ -168,9 +168,8 @@
 
     &::before {
         @include before;
-        // background: linear-gradient(90deg, #16171A 0.06%, rgba(22, 23, 26, 0) 99.93%);
-        background: #120F2D;
-        opacity: 0.3;
+        background: var(--bg);
+        opacity: 0.5;
     }
 
     .hero-content {
@@ -285,8 +284,8 @@
     
         &::before {
             @include before;
-            background-color: #120F2D;
-            opacity: 0.3;
+            background-color: var(--bg);
+            opacity: 0.5;
         }
     }
 
@@ -371,7 +370,7 @@
 
         &::before {
             @include before;
-            background-color: rgba(18, 19, 21, 0.5);
+            background-color: var(--overlay);
             z-index: -1;
         }
 

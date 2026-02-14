@@ -231,6 +231,7 @@
         .contact-info-area-2 {
             padding: 40px;
             background-color: $theme-color;
+            border-radius: 12px;
 
             .contact-info-items {
                 @include flex;

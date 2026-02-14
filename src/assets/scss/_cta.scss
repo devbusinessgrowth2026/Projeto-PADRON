@@ -113,7 +113,7 @@
 
     &::before {
         @include before;
-        background-color: $white;
+        background-color: var(--body);
         z-index: -1;
         top: 50%;
     }
@@ -121,6 +121,7 @@
     .cta-wrapper-2 {
         padding: 55px 60px;
         background-color: $theme-color;
+        border-radius: 12px;
         @include flex;
         justify-content: space-between;
 

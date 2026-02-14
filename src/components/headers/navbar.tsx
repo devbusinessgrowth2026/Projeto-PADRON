@@ -1,22 +1,14 @@
-import { menuData, MenuItemDataType } from "@/db/menuData";
-import { Fragment, useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { MenuItemDataType } from "@/db/menuData";
+import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import { menuDataSingleHomePage } from "@/db/menuDataSingleHomePage";
 
 function Navbar() {
-    const pathName = useLocation().pathname
-    const [data, setData] = useState<MenuItemDataType[]>([])
-    useEffect(() => {
-        if (pathName === '/') {
-            setData(menuDataSingleHomePage)
-        } else {
-            setData(menuData)
-        }
-    }, [pathName])
+    const data: MenuItemDataType[] = menuDataSingleHomePage;
     return (
         <ul>
             {data.map(({ link, title, megamenu, submenu }, index) => (
-                <li key={index} className={`${megamenu ? 'menu-thumb' : ''} ${submenu ? 'has-dropdown' : ''} ${index === 0 ? 'active' : ''}`}>
+                <li key={index} className={`${megamenu ? 'menu-thumb' : ''} ${submenu?.length ? 'has-dropdown' : ''} ${index === 0 ? 'active' : ''}`}>
                     <Link to={link}>
                         {title}{' '}
                         {

@@ -8,7 +8,13 @@
 	margin-top: -7px;
 
 	@include breakpoint (max-md){
-		margin-bottom: 0;
+		margin-bottom: 20px;
+	}
+
+	&.text-center {
+		max-width: 640px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	span {
@@ -17,11 +23,14 @@
 		display: inline-block;
 		font-weight: 500;
 		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
 	h2 {
 		font-weight: bold;
-		
+		line-height: 1.25;
+		color: $header-color;
+
 		span {
 			color: $theme-color;
 			font-weight: 700;
@@ -66,6 +75,10 @@
 	background-color: $bg-color-2;
 }
 
+.section-bg-light {
+	background-color: var(--bg-light);
+}
+
 
 .section-padding{
 	padding: 120px 0;
@@ -74,6 +87,13 @@
 	}
 	@include breakpoint(max-lg){
 		padding: 80px 0;
+	}
+}
+
+.section-padding-sm {
+	padding: 60px 0;
+	@include breakpoint(max-lg){
+		padding: 50px 0;
 	}
 }
 //>>>>> Basic Css End <<<<<//
