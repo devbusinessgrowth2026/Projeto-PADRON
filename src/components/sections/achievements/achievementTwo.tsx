@@ -36,7 +36,7 @@ const achievementData = [
 
 const AchievementTwo = ({ achievementWrapperClass, className }: { achievementWrapperClass?: string, className?: string }) => {
     const { ref, inView } = useInView({
-        threshold: 1,
+        threshold: 0.2,
         triggerOnce: true
     });
     return (
@@ -58,12 +58,20 @@ const AchievementTwo = ({ achievementWrapperClass, className }: { achievementWra
                                     <img src={item.icon} alt="icon-img" />
                                 </div>
                                 <div className="content">
-                                    {
-                                        inView &&
-                                        <h2>
-                                            <span className="count"><CountUp end={item.count} /></span>+
-                                        </h2>
-                                    }
+                                    <h2>
+                                        {inView ? (
+                                            <span className="count">
+                                                <CountUp
+                                                    start={0}
+                                                    end={item.count}
+                                                    duration={2.5}
+                                                    useEasing
+                                                />+
+                                            </span>
+                                        ) : (
+                                            <span className="count">0+</span>
+                                        )}
+                                    </h2>
                                     <p>{item.description}</p>
                                 </div>
                             </div>
